@@ -21,7 +21,7 @@ export class GeneroService {
   constructor(private http: HttpClient) { }
 
   async listaGeneros(){
-/*
+
     try{
         let respuesta: any;
 
@@ -33,8 +33,8 @@ export class GeneroService {
       console.log(e);
       return [];
     }
-*/
 
-    return this.generos;
+
+    //return this.generos;
   }
 }

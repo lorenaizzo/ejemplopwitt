@@ -1,1 +1,9 @@
 <p>listar-libros works!</p>
+<table>
+
+    <tr *ngFor="let libro of libros">
+        <td>{{libro.nombre}}</td>
+        <td>{{libro.autor}}</td>
+        <td><button (click)="borrarLibro(libro.id)">Borrar</button></td>
+    </tr>
+</table>

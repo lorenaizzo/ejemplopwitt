@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { LibroService } from '../libro.service';
 
 @Component({
   selector: 'app-listar-libros',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListarLibrosComponent implements OnInit {
 
-  constructor() { }
+  constructor(private libroService = LibroService) { }
 
   ngOnInit(): void {
   }
 
+
+  borrarLibro(idLibro){
+
+    this.libroService.borrar(idLibro);
+  }
 }
